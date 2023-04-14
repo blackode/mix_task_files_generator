@@ -1,21 +1,16 @@
-# Sms
+# Sms.Gen.Integration.School
+![image](https://user-images.githubusercontent.com/9107477/232107760-40874dbb-853c-483c-9096-f0bf686ac70f.png)
 
-**TODO: Add description**
-
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `sms` to your list of dependencies in `mix.exs`:
-
+## Usage
 ```elixir
-def deps do
-  [
-    {:sms, "~> 0.1.0"}
-  ]
-end
+      mix sms.gen.integration.school school_name
+      mix sms.gen.integration.school school_name -p my_schools
+      mix sms.gen.integration.school school_name --schools_path my_schools
+      mix sms.gen.integration.school delhi_public -m DelhiSchool
+      mix sms.gen.integration.school delhi_public --module_name DelhiSchool
+
 ```
+## Command line options
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/sms>.
-
+* `-m`, `--module_name` - the module name to be used for school by default it uses school name
+* `-p`, `--schools_path` - the schools path to be used by default it uses "lib/schools"
